@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<%@ errorPage="error.jsp"%>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+        background-color:#616b6b;
+        }
+        #formdiv{
+        top:225px;
+        left:595px;
+        height:200px;
+        width:350px;
+        background-color:#a8d6d6;
+        position:relative;
+        border:2px solid black;
+        border-radius:25px;
+
+        }
+
+        #formm{
+        position: absolute;
+        left:63px;
+        top:45px;
+        }
+        #formm input{
+        width:150px;
+        }
+        #submitButton{
+        position: relative;
+        left:44px;
+        }
+        .inpt{
+        padding:3px 9px 3px 68px
+        }
+
+    </style>
+</head>
+<body>
+<div id="formdiv">
+    <form action="/JSP/validate" id="formm" method="get">
+
+
+        <input type="text" name="username" class ="inpt" placeholder="Username"><br><br>
+
+        <input type="password" id="psd" class ="inpt" name="password" placeholder="Password"><br><br>
+        <input type="submit" id="submitButton" name="submit">
+
+    </form>
+
+
+</div>
+</body>
+</html>
